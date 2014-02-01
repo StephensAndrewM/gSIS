@@ -1,0 +1,19 @@
+{
+  "name": "gSIS",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "description": "Gets information from Google.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.uit.tufts.edu/*"],
+      "css": [
+        "inject.css"
+      ],
+      "js": [
+        "jquery.js", 
+        "inject.js"
+      ],
+      "run_at" : "document_end"
+    }
+   ]
+}
