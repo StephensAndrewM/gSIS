@@ -8,7 +8,7 @@
       "matches": ["https://*.uit.tufts.edu/*"],
       "css": [
         "inject.css",
-        "menubar.css"
+        "menubar.css",
         "shoppingcart.css",
         "ClassSearch.css"
       ],
