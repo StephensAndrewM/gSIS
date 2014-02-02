@@ -22,7 +22,6 @@
 	var help = $('<li class="rightlink"><a class="help-link" href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/EMPL/s/WEBLIB_IS_AW.ISCRIPT1.FieldFormula.IScript_AssemblePage?AWGroupID=TFP_HELP&AWPageID=TFP_HELP&AWObjName=TFP_HELP_LPG">Help</a></li>');
 	menu.append(help);
 
-
 	var schedule_ul = $('<ul></ul>');
 	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.SSS_MY_PLANNER.GBL">Planner</a></li>');
 	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES_2.SSR_SSENRL_CART.GBL">Enroll</a></li>');
@@ -60,3 +59,6 @@
 			self.find('ul').css({ display:'none' });
 		}, 500)
 	});
+
+	console.log(chrome.extension.getURL('img/iconmonstr-book-17-icon.svg'));
+	console.log(home, home.find('a'));
