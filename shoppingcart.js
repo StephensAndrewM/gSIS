@@ -14,7 +14,7 @@ $("#STDNT_ENRL_SSVW\\$scroll\\$0").find("tr").each(function(i){
 	})
 	classData[i] = classRow;
 	console.log(classData);
-})
+});
 
 $.each(classData, function(i){
 	if(i == 0)
@@ -27,7 +27,7 @@ $.each(classData, function(i){
 		course.append('<div class="gsis_course gsis_course_professor">'+classRow[4]+"</div>");
 		course.append('<div class="gsis_course gsis_course_credit">'+classRow[5]+" credit</div>");
 	$("#win0divDERIVED_SSTSNAV_GROUP_BOX\\$144\\$").append(course);
-})
+});
 
 
 
