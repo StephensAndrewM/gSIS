@@ -3,6 +3,8 @@ var observer, callback;
 
 callback = function(allmutations){
 
+	$('#win0divDERIVED_CLSRCH_GROUP6').parent().parent().hide();
+
 	var courseList = [];
 	var course;
 	$(".SSSHYPERLINKBOLD").each(function(i){
