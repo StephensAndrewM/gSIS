@@ -25,5 +25,14 @@
       "run_at" : "document_end",
       "all_frames" : true
     }
+   ],
+   "web_accessible_resources": [
+    "img/iconmonstr-book-17-icon.svg",
+    "img/iconmonstr-calendar-5-icon.svg",
+    "img/iconmonstr-help-3-icon.svg",
+    "img/iconmonstr-home-4-icon.svg",
+    "img/iconmonstr-logout-5-icon.svg",
+    "img/iconmonstr-picture-box-icon.svg",
+    "img/iconmonstr-text-file-4-icon.svg"
    ]
 }

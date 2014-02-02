@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path id="picture-box-icon" d="M287.939,239.845l-41.083,52.16l-22.326-20.567l-58.992,58.968h189.923L287.939,239.845
+	 M187.015,216.99c-13.678,0-24.773,9.919-24.773,22.141c0,12.24,11.096,22.146,24.773,22.146c13.7,0,24.788-9.906,24.788-22.146
+	C211.803,226.909,200.715,216.99,187.015,216.99 M317.036,356.528l-26.55,27.083h-68.062l-26.628-27.083H50.06H50l15,97.674h381
+	l16-97.674h-0.06H317.036z M423.685,133.298H86.521l-4-30h345.164L423.685,133.298z M401.435,82.798H111.521l-4-25h297.914
+	L401.435,82.798z M74.048,331.528L60.583,155.065h390l-13.846,176.463h-40.495l9.341-137.463h-301l10.341,137.463H74.048z" fill="#ffffff"/>
+</svg>
