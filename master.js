@@ -1,7 +1,12 @@
-var pageAction = function(url, action) {
+var pageAction = function(urls, action) {
 
-	if (location.href == url) {
-		action.call();
+	var include = false;
+	for (var i in urls) {
+		if (location.href == urls[i]) {
+			include = true;
+		}
 	}
+
+	if (include) { action.call(); }
 
 }
