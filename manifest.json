@@ -7,13 +7,16 @@
     {
       "matches": ["https://*.uit.tufts.edu/*"],
       "css": [
-        "inject.css"
+        "inject.css",
+        "shoppingcart.css"
       ],
       "js": [
         "jquery.js", 
-        "inject.js"
+        "inject.js",
+        "shoppingcart.js"
       ],
-      "run_at" : "document_end"
+      "run_at" : "document_end",
+      "all_frames": true
     }
    ]
 }
