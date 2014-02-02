@@ -7,18 +7,20 @@
     {
       "matches": ["https://*.uit.tufts.edu/*"],
       "css": [
-        "inject.css",
+        "ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css",
         "menubar.css",
         "shoppingcart.css",
         "ClassSearch.css"
       ],
       "js": [
-        "jquery.js", 
+        "jquery.js",
+        "ui/js/jquery-ui-1.10.4.custom.min.js", 
         "master.js",
-        "inject.js",
         "menubar.js",
         "shoppingcart.js",
-        "ClassSearch.js"
+        "ClassSearch.js",
+        "classlist.js"
+
       ],
       "run_at" : "document_end",
       "all_frames" : true
