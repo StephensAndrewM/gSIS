@@ -1,7 +1,7 @@
 {
   "name": "gSIS",
   "manifest_version": 2,
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Gets information from Google.",
   "content_scripts": [
     {
@@ -19,8 +19,8 @@
         "menubar.js",
         "shoppingcart.js",
         "ClassSearch.js",
-        "classlist.js"
-
+        "classlist.js",
+        "magicbox.js"
       ],
       "run_at" : "document_end",
       "all_frames" : true
