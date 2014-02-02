@@ -95,9 +95,8 @@ if ($('#win0divDERIVED_CLSRCH_GROUP2').length > 0) {
 	];
 
 	$( '#quick_seach_input' ).autocomplete({
-  source: tags //["test", "sushi", "iSISux"]
-})
-	.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+  		source: tags //["test", "sushi", "iSISux"]
+	}).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
 		return $( "<li>" )
 		.append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
 		.appendTo( ul );

@@ -3,8 +3,22 @@
 #TFP_HEADER_BG {
 	background: url(chrome-extension://__MSG_@@extension_id__/img/tufts_cover.jpg) no-repeat !important;
 	background-size: cover !important;
-	height:300px !important;
+	height:150px !important;
 	background-color:#417DC1;
+}
+
+#gsis_header {
+	height: 110px;
+	width: 980px;
+	margin: 0 auto;
+	position:relative;
+}
+
+@media only screen and (min-height: 900px) {
+
+	#TFP_HEADER_BG { height:300px !important; }
+	#gsis_header { height:260px; }
+
 }
 
 #magic_form {
@@ -34,12 +48,7 @@
 	display: none;
 }
 
-#gsis_header {
-	height: 260px;
-	width: 980px;
-	margin: 0 auto;
-	position:relative;
-}
+
 
 .gsis_header_logo {
 
