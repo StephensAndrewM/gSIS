@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
+
+#TFP_HEADER, #TFP_MENU_BAR {
+	display: none;
+}
+
+#TFP_HEADER_BG {
+	background:#417DC1 !important;
+	height:125px !important;
+}
+
+.gsis_header {
+	height: 85px;
+	width: 980px;
+	margin: 0 auto;
+}
+
+.gsis_header_logo {
+
+}
