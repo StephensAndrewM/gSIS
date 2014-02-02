@@ -78,8 +78,8 @@
 
 .gsis_menu a.home-link 		{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-home-4-icon.svg); }
 .gsis_menu a.schedule-link 	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-calendar-5-icon.svg); }
-.gsis_menu a.classes-link 	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-text-file-4-icon.svg); }
-.gsis_menu a.request-link	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-calendar-5-icon.svg); }
+.gsis_menu a.classes-link 	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-book-17-icon.svg); }
+.gsis_menu a.request-link	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-text-file-4-icon.svg); }
 .gsis_menu a.resources-link { background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-picture-box-icon.svg); }
 .gsis_menu a.help-link 		{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-help-3-icon.svg); }
 .gsis_menu a.logout-link 	{ background-image: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-logout-5-icon.svg); }
