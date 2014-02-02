@@ -23,3 +23,61 @@
 .gsis_header_logo {
 
 }
+
+.gsis_menu {
+	background: #88492B;
+}
+
+.gsis_menu ul {
+	margin:0 auto;
+	width:980px;
+	height:40px;
+}
+
+.gsis_menu li {
+	float:left;
+	position: relative;
+}
+
+.gsis_menu a {
+	transition: 0.5s all ease;
+	background: #88492B;
+	line-height: 40px;
+}
+
+.gsis_menu a:link, .gsis_menu a:visited {
+	display:block;
+	color:white;
+	text-decoration: none;
+	padding:0 8px;
+	font-size:0.8em;
+}
+
+.gsis_menu a:hover {
+	color:white;
+	text-decoration: none !important;
+	background: #300F00;
+}
+
+.gsis_menu li ul {
+	position:absolute;
+	top:40px;
+	width:200px;
+	z-index:42;
+	display: none;
+	opacity:0;
+	transition: 0.5s all ease;
+}
+
+.gsis_menu li:hover ul {
+	/*display:block;*/
+	opacity:1;
+}
+
+.gsis_menu li li {
+	float:none;
+}
+
+.gsis_menu li li a {
+	line-height:30px;
+}
