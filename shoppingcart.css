@@ -1,30 +1,67 @@
-.gsis_course_block{
-	padding: 3px white;	
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
-.gsis_course{
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+#win0divDERIVED_REGFRM1_GROUP6 {
+	display: none;
+}
+
+#win0divDERIVED_SSTSNAV_GROUP_BOX\$144\$ .PABACKGROUNDINVISIBLEWBO {
+	display: none;
+}
+
+.gsis_course_block {
+	background: #d9e8f6;
+	margin-bottom:15px;
+}
+
+.gsis_course_title {
+	background: #60280D;
 	color: white;
-	padding: 3px white;
-	border: 1px solid white;
-	background-color: #52ACC3;
-	margin: 3px;
-	}
-.gsis_course_title{
-	font-size: 20px;
-	width: 50%;
+	padding: 5px;
+	padding-left:25px;
 }
-.gsis_course_time{
-	float:right;
-	width: 50%;
-}
-.gsis_couse_location{
+
+.gsis_course_data {
 	float:left;
-	width: 50%;
+	width:250px;
+	font-size:0.9em;
+	padding: 10px 0;
+	padding-left:31px;
+	background-position: 8px;
+	background-size:16px;
+	background-repeat: no-repeat;
 }
-.gsis_course_professor{
-	float:left;
-	width: 50%;
+
+.gsis_course_location 	{ background-image:url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-home-2-icon.svg); }
+.gsis_course_professor 	{ background-image:url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-user-icon.svg); }
+.gsis_course_time 		{ background-image:url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-time-icon.svg); }
+.gsis_course_credit 	{ background-image:url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-text-file-3-icon.svg); }
+
+.gsis_course_data_container {
+	padding:10px;
 }
-.gsis_course_professor{
-	float:right;
-	width: 50%;
-}
+
+.gsis_course_status_enrolled 	{ background: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-check-mark.svg) no-repeat 5px 5px #1d9230; background-size: 16px; }
+.gsis_course_status_waitlist 	{ background: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-wait-list.svg) no-repeat 5px 5px #aabb13; background-size: 16px; }
+.gsis_course_status_dropped 	{ background: url(chrome-extension://__MSG_@@extension_id__/img/iconmonstr-x-mark-4-icon.svg) no-repeat 5px 5px #a12c2c; background-size: 16px; }
