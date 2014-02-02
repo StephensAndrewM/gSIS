@@ -11,7 +11,8 @@
         "menubar.css",
         "shoppingcart.css",
         "ClassSearch.css",
-        "login.css"
+        "login.css",
+        "classlist.css"
       ],
       "js": [
         "jquery.js",

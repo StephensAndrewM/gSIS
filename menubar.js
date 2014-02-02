@@ -1,4 +1,4 @@
-	var header = $('<div id="gsis_header"></div>');
+	var header = $('<div id="gsis_header"><h1>gSIS</h1></div>');
 	//header.append('<img src="http://placekitten.com/400/200" class="gsis_header_logo" />');
 
 	var nav = $('<nav class="gsis_menu"></nav>');

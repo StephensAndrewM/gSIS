@@ -14,8 +14,17 @@
 	position:relative;
 }
 
+#gsis_header h1 {
+	line-height:110px;
+	font-size:4.5em;
+	text-shadow: 0 3px 4px black;
+	font-weight:bold;
+	color:rgb(150, 170, 235);
+}
+
 @media only screen and (min-height: 900px) {
 
+	#gsis_header h1 { line-height:260px; font-size:7em; }
 	#TFP_HEADER_BG { height:300px !important; }
 	#gsis_header { height:260px; }
 

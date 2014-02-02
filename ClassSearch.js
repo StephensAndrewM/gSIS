@@ -10,7 +10,7 @@ console.log('something');
 
 if ($('#win0divDERIVED_CLSRCH_GROUP2').length > 0) {
 
-	$('#DERIVED_REGFRM1_TITLE1').append('<br /><form id="gsis_class_search_quick_search" >Already know the class you want? Try a quick search!<br /> <input id="quick_seach_input" type="text" placeholder="Example (DR 18)"> </form>')
+	$('#DERIVED_REGFRM1_TITLE1').append('<br /><form id="gsis_class_search_quick_search" >Already know the class you want? Try a quick search!<br /> <input id="quick_seach_input" type="text" placeholder="Example: DR 18" autofocus="true"> </form>')
 
 
 

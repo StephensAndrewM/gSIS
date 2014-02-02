@@ -1,0 +1,43 @@
+.gsis_listel_title {
+	background: #60280D;
+	color: white;
+	padding: 5px;
+	margin-bottom:20px;
+}
+
+.gsis_listel_title span {
+	padding: 10px 0;
+	display:block;
+}
+
+.gsis_listel_block {
+	padding: 5px;
+	background: green;
+	margin-bottom: 5px;
+	background: #c2c2c2;
+}
+
+.gsis_listel_status_waitlist {
+	background: #a7a7a7;
+}
+
+.gsis_listel_status_closed {
+	background: rgb(160, 137, 137);
+}
+
+.gsis_listel_data {
+	color:black;
+}
+
+a.gsis_listel_button {
+	display: block;
+	background: black;
+	float: left;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+a.gsis_listel_button:link, a.gsis_listel_button:visited {
+		color: white;
+	text-decoration: none;	
+}
