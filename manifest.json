@@ -9,14 +9,16 @@
       "css": [
         "inject.css",
         "menubar.css"
-        "shoppingcart.css"
+        "shoppingcart.css",
+        "ClassSearch.css"
       ],
       "js": [
         "jquery.js",
         "master.js",
         "inject.js",
         "menubar.js",
-        "shoppingcart.js"
+        "shoppingcart.js",
+        "ClassSearch.js"
       ],
       "run_at" : "document_end",
       "all_frames": true
