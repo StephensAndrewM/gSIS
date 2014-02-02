@@ -1,14 +1,14 @@
 pageAction(['https://isiscs.uit.tufts.edu/psc/csprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?PortalActualURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentProvider=PSFT_SA&PortalCRefLabel=Search%20for%20Classes&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsp%2fpaprd%2f&PortalURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsc%2fpaprd%2f&PortalHostNode=EMPL&NoCrumbs=yes&PortalKeyStruct=yes'], function() {
 
-var observer, callback;
+	var observer, callback;
 
-callback = function(allmutations){
+	callback = function(allmutations){
 
-var check = $('#DERIVED_REGFRM1_TITLE1').text();
+//var check = $('#DERIVED_REGFRM1_TITLE1').text();
 
+console.log('something');
 
-
-if (check == "Enter Search Criteria") {
+if ($('#win0divDERIVED_CLSRCH_GROUP2').length > 0) {
 
 	$('#DERIVED_REGFRM1_TITLE1').append('<br /><form id="gsis_class_search_quick_search" >Already know the class you want? Try a quick search!<br /> <input id="quick_seach_input" type="text" placeholder="Example (DR 18)"> </form>')
 
@@ -113,9 +113,14 @@ if (check == "Enter Search Criteria") {
 
 		$('#SSR_CLSRCH_WRK_SUBJECT\\$76\\$\\$1').val(testarray[0]);
 
+		if(testarray[1]==null) 
+		{
+			testarray[1] = '';
+		}
+
 		var numd = testarray[1].length;
 
-		while (numd < 4)
+		while (numd < 4 && numd!=0)
 		{
 			testarray[1] = '0' + testarray[1];
 			numd = testarray[1].length;
@@ -134,12 +139,13 @@ if (check == "Enter Search Criteria") {
 	}
 	);
 }
+else { console.log('incorrect page')}
 }
 observer = new MutationObserver(callback);
 var  options = {
-    'childList': true
+	'childList': true
 }; 
-article = document.querySelector("#win0divPAGECONTAINER");
+article = document.querySelector("#win0divPSPAGECONTAINER");
 if(article != null) {
 	console.log("ÖBSERVING");
 	observer.observe(article, options);
