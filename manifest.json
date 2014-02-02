@@ -22,7 +22,8 @@
         "ClassSearch.js",
         "classlist.js",
         "magicbox.js",
-        "login.js"
+        "login.js",
+        "schedule.js"
       ],
       "run_at" : "document_end",
       "all_frames" : true
@@ -35,6 +36,7 @@
     "img/iconmonstr-home-4-icon.svg",
     "img/iconmonstr-logout-5-icon.svg",
     "img/iconmonstr-picture-box-icon.svg",
-    "img/iconmonstr-text-file-4-icon.svg"
+    "img/iconmonstr-text-file-4-icon.svg",
+    "img/tufts_cover.jpg"
    ]
 }
