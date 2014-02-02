@@ -10,7 +10,8 @@
         "ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css",
         "menubar.css",
         "shoppingcart.css",
-        "ClassSearch.css"
+        "ClassSearch.css",
+        "login.css"
       ],
       "js": [
         "jquery.js",
@@ -20,7 +21,8 @@
         "shoppingcart.js",
         "ClassSearch.js",
         "classlist.js",
-        "magicbox.js"
+        "magicbox.js",
+        "login.js"
       ],
       "run_at" : "document_end",
       "all_frames" : true
