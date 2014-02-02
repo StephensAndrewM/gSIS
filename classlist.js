@@ -25,27 +25,28 @@ $(".course_name").hover(function(){
 	var i = $(this).data("i");
 	$("#\\$ICField236\\$scroll\\$"+i).find("#\\$ICField236\\$hviewall\\$"+i).each(function(){
 		var script = $(this).attr("href");
-		console.log(i, script);
 	 	window.location.href = script;
 	});
 	var class_sections = [];
 	$("#ACE_\\$ICField236\\$"+i).find(".PSLEVEL1GRIDWBO").each(function(j){
 		var class_info = [];
-		$(this).find("#PSLONGEDITBOX").each(function(k){
+		$(this).find(".PSLONGEDITBOX").each(function(k){
 			class_info[k] = $(this).text();
+			console.log(class_info[k]);
 		});
 		class_sections[j] = class_info;
 	});
-	$.each(classData, function(j){
+	$.each(class_sections, function(j){
 		var section_info = class_sections[j];
-	
+		console.log("111111111");
 		var section = $('<div class="gsis_course_block"></div>');
+			console.log("22222222222");
 			section.append('<div class="gsis_course gsis_course_time">'+class_sections[0]+"</div>");
 			section.append('<div class="gsis_course gsis_course_location">'+class_sections[1]+"</div>");
 			section.append('<div class="gsis_course gsis_course_professor">'+class_sections[2]+"</div>");
 			section.append('<div class="gsis_course gsis_course_dates">'+class_sections[3]+"</div>");
-		$(this).parent().append(section);
-		console.log("Appended");
+			console.log($(this).parent());
+		$(this).append(section);
 	});
 });
 	//console.log("I AM HAPPENING");
