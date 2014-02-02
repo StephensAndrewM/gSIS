@@ -1,8 +1,20 @@
 pageAction(['https://isiscs.uit.tufts.edu/psc/csprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?PortalActualURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentProvider=PSFT_SA&PortalCRefLabel=Search%20for%20Classes&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsp%2fpaprd%2f&PortalURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsc%2fpaprd%2f&PortalHostNode=EMPL&NoCrumbs=yes&PortalKeyStruct=yes'], function() {
 
-$('#DERIVED_REGFRM1_TITLE1').append('<br /><form id="gsis_class_search_quick_search" >Already know the class you want? Try a quick search!<br /> <input id="quick_seach_input" type="text" placeholder="Example (DR 18)"> </form>')
+var observer, callback;
 
-var tags = [
+callback = function(allmutations){
+
+var check = $('#DERIVED_REGFRM1_TITLE1').text();
+
+
+
+if (check == "Enter Search Criteria") {
+
+	$('#DERIVED_REGFRM1_TITLE1').append('<br /><form id="gsis_class_search_quick_search" >Already know the class you want? Try a quick search!<br /> <input id="quick_seach_input" type="text" placeholder="Example (DR 18)"> </form>')
+
+
+
+	var tags = [
 	{ value:'ACL', label:'ACL', desc:'All College' }, 
 	{ value:'AFR', label:'AFR', desc:'Africana Studies' }, 
 	{ value:'AMER', label:'AMER', desc:'American Studies' }, 
@@ -80,47 +92,60 @@ var tags = [
 	{ value:'UEP', label:'UEP', desc:'Urban & Env Policy & Planning' }, 
 	{ value:'WGSS', label:'WGSS', desc:'Women\'s, Gender, and Sexuality' }, 
 	{ value:'WL', label:'WL', desc:'World Literature' } 
-];
+	];
 
-$( '#quick_seach_input' ).autocomplete({
+	$( '#quick_seach_input' ).autocomplete({
   source: tags //["test", "sushi", "iSISux"]
 })
-    .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-      return $( "<li>" )
-        .append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
-        .appendTo( ul );
-    };
+	.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+		return $( "<li>" )
+		.append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
+		.appendTo( ul );
+	};
 
-$('#gsis_class_search_quick_search').submit(function(){
+	$('#gsis_class_search_quick_search').submit(function(){
 
-var test = $('#gsis_class_search_quick_search').find('input').val();
+		var test = $('#gsis_class_search_quick_search').find('input').val();
 
-var testarray = test.split(" ");
+		var testarray = test.split(" ");
 
-$('#SSR_CLSRCH_WRK_SSR_OPEN_ONLY\\$chk\\$3').val('N');
+		$('#SSR_CLSRCH_WRK_SSR_OPEN_ONLY\\$chk\\$3').val('N');
 
-$('#SSR_CLSRCH_WRK_SUBJECT\\$76\\$\\$1').val(testarray[0]);
+		$('#SSR_CLSRCH_WRK_SUBJECT\\$76\\$\\$1').val(testarray[0]);
 
-var numd = testarray[1].length;
+		var numd = testarray[1].length;
 
-while (numd < 4)
-{
-	testarray[1] = '0' + testarray[1];
-	numd = testarray[1].length;
+		while (numd < 4)
+		{
+			testarray[1] = '0' + testarray[1];
+			numd = testarray[1].length;
+		}
+
+		$('#SSR_CLSRCH_WRK_CATALOG_NBR\\$2').val(testarray[1]);	
+
+		var submit = $('#CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH').attr('href');
+
+		if (window.location.href == 'https://isiscs.uit.tufts.edu/psc/csprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?PortalActualURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentProvider=PSFT_SA&PortalCRefLabel=Search%20for%20Classes&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsp%2fpaprd%2f&PortalURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsc%2fpaprd%2f&PortalHostNode=EMPL&NoCrumbs=yes&PortalKeyStruct=yes')
+		{
+			window.location.href = submit;
+
+		}
+		return false;
+	}
+	);
+}
+}
+observer = new MutationObserver(callback);
+var  options = {
+    'childList': true
+}; 
+article = document.querySelector("#win0divPAGECONTAINER");
+if(article != null) {
+	console.log("ÖBSERVING");
+	observer.observe(article, options);
 }
 
-$('#SSR_CLSRCH_WRK_CATALOG_NBR\\$2').val(testarray[1]);	
-
-var submit = $('#CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH').attr('href');
-
-if (window.location.href == 'https://isiscs.uit.tufts.edu/psc/csprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?PortalActualURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentURL=https%3a%2f%2fisiscs.uit.tufts.edu%2fpsc%2fcsprd%2fEMPLOYEE%2fPSFT_SA%2fc%2fSA_LEARNER_SERVICES.CLASS_SEARCH.GBL&PortalContentProvider=PSFT_SA&PortalCRefLabel=Search%20for%20Classes&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsp%2fpaprd%2f&PortalURI=https%3a%2f%2fisis.uit.tufts.edu%2fpsc%2fpaprd%2f&PortalHostNode=EMPL&NoCrumbs=yes&PortalKeyStruct=yes')
-{
-	window.location.href = submit;
-
-}
-return false;
-}
-);
+callback();
 
 });
 
