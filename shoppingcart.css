@@ -1,0 +1,30 @@
+.gsis_course_block{
+	padding: 3px white;	
+}
+.gsis_course{
+	color: white;
+	padding: 3px white;
+	border: 1px solid white;
+	background-color: #52ACC3;
+	margin: 3px;
+	}
+.gsis_course_title{
+	font-size: 20px;
+	width: 50%;
+}
+.gsis_course_time{
+	float:right;
+	width: 50%;
+}
+.gsis_couse_location{
+	float:left;
+	width: 50%;
+}
+.gsis_course_professor{
+	float:left;
+	width: 50%;
+}
+.gsis_course_professor{
+	float:right;
+	width: 50%;
+}
