@@ -13,7 +13,7 @@
         "ClassSearch.css"
       ],
       "js": [
-        "jquery.js",
+        "jquery.js", 
         "master.js",
         "inject.js",
         "menubar.js",
@@ -21,7 +21,7 @@
         "ClassSearch.js"
       ],
       "run_at" : "document_end",
-      "all_frames": true
+      "all_frames" : true
     }
    ]
 }
