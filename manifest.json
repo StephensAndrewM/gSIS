@@ -8,11 +8,16 @@
       "matches": ["https://*.uit.tufts.edu/*"],
       "css": [
         "inject.css",
+        "menubar.css",
+        "shoppingcart.css",
         "ClassSearch.css"
       ],
       "js": [
         "jquery.js", 
+        "master.js",
         "inject.js",
+        "menubar.js",
+        "shoppingcart",
         "ClassSearch.js"
       ],
       "run_at" : "document_end",
