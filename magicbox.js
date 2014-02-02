@@ -1,4 +1,4 @@
-$('#TFP_HEADER_BG').append('<form id="magic_form"><input id="magic_box" type="text" placeholder="Find a Feature"></form>');
+$('#gsis_header').append('<form id="magic_form"><input id="magic_box" type="text" placeholder="Find a Feature"></form>');
 
 var commands = [
 {value:'Help', label:'Help', desc:'View help menu', url:'https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/EMPL/s/WEBLIB_IS_AW.ISCRIPT1.FieldFormula.IScript_AssemblePage?AWGroupID=TFP_HELP&AWPageID=TFP_HELP&AWObjName=TFP_HELP_LPG'},
@@ -29,19 +29,21 @@ var commands = [
 
 ];
 
-console.log($('#magic_box'));
+	var box = $( '#magic_box' ).autocomplete({
+  		source: commands
+	})
 
-if($('#magic_box')!=undefined){
-	$( '#magic_box' ).autocomplete({
-  source: commands //["test", "sushi", "iSISux"]
-})
-	.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+	if (box.data('ui-autocomplete') !== undefined) {
+		box.data('ui-autocomplete')._renderItem = function( ul, item ) {
 		return $( "<li>" )
-		.append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
-		.appendTo( ul );
-	};
+			.append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
+			.appendTo( ul );
+		};
+	}
 
 	$('#magic_form').submit(function(){
+
+		alert('submit');
 
 		var command = $('#magic_form').find('input').val();
 
@@ -56,4 +58,3 @@ if($('#magic_box')!=undefined){
 		}
 		return false;
 	});
-}

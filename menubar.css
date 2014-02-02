@@ -1,4 +1,29 @@
-/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);*/
+/* Header */
+
+#TFP_HEADER_BG {
+	background: url(chrome-extension://__MSG_@@extension_id__/img/tufts_cover.jpg) no-repeat !important;
+	background-size: cover !important;
+	height:300px !important;
+	background-color:#417DC1;
+}
+
+#magic_form {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height:40px;
+}
+
+#magic_box {
+	border:0;
+	background:rgba(255,255,255,0.95);
+	border-radius:5px;
+	padding: 10px;
+	width: 300px;
+}
+
 
 /* Alert Message */
 #IS_ALERTS_AREA {
@@ -9,15 +34,11 @@
 	display: none;
 }
 
-#TFP_HEADER_BG {
-	background:#417DC1 !important;
-	height:125px !important;
-}
-
-.gsis_header {
-	height: 85px;
+#gsis_header {
+	height: 260px;
 	width: 980px;
 	margin: 0 auto;
+	position:relative;
 }
 
 .gsis_header_logo {
