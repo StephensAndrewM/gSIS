@@ -23,6 +23,7 @@
 	menu.append(help);
 
 	var schedule_ul = $('<ul></ul>');
+	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL#schedule">My Schedule</a></li>');
 	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.SSS_MY_PLANNER.GBL">Planner</a></li>');
 	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES_2.SSR_SSENRL_CART.GBL">Enroll</a></li>');
 	schedule_ul.append('<li><a href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/PSFT_SA/c/SA_LEARNER_SERVICES.SAA_SS_DPR_ADB.GBL">Advisement Report</a></li>');
