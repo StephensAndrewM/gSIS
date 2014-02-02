@@ -1,4 +1,4 @@
-	var header = $('<div class="gsis_header"></div>');
+	var header = $('<div id="gsis_header"></div>');
 	//header.append('<img src="http://placekitten.com/400/200" class="gsis_header_logo" />');
 
 	var nav = $('<nav class="gsis_menu"></nav>');
@@ -59,6 +59,3 @@
 			self.find('ul').css({ display:'none' });
 		}, 500)
 	});
-
-	console.log(chrome.extension.getURL('img/iconmonstr-book-17-icon.svg'));
-	console.log(home, home.find('a'));

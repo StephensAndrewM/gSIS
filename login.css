@@ -6,7 +6,7 @@
 }
 
 body.login-page {
-	background-image: url('http://placekitten.com/1920/1080');
+	background-image: url(chrome-extension://__MSG_@@extension_id__/img/tufts_cover.jpg);
 	background-size: cover;
 	height:100%;
 	position:relative;
@@ -15,13 +15,12 @@ body.login-page {
 #gsis_login_logo {
 	position: absolute;
 	left: 10%;
-	top: 0;
-	bottom: 0;
-	margin: auto;
+	top: 50px;
+	text-shadow: 0 3px 4px black;
 	font-size:9em;
 	font-weight:bold;
 	height: 175px;
-	color:white;
+	color:rgb(150, 170, 235);
 }
 
 .login-page #isisLogo {
@@ -32,7 +31,7 @@ body.login-page {
 	position: absolute;
 	right: 10%;
 	top: 0;
-	bottom: 0;
+	bottom:0;
 	margin: auto;
 	background: rgba(255,255,255,0.8);
 	height: 150px;
