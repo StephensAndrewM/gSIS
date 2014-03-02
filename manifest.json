@@ -1,49 +1,48 @@
 {
-  "name": "gSIS",
-  "manifest_version": 2,
-  "version": "0.0.5",
-  "description": "Gets information from Google.",
-  "content_scripts": [
-    {
-      "matches": ["https://*.uit.tufts.edu/*"],
-      "css": [
-        "ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css",
-        "menubar.css",
-        "shoppingcart.css",
-        "ClassSearch.css",
-        "login.css",
-        "classlist.css"
-      ],
-      "js": [
-        "jquery.js",
-        "ui/js/jquery-ui-1.10.4.custom.min.js", 
-        "master.js",
-        "menubar.js",
-        "shoppingcart.js",
-        "ClassSearch.js",
-        "classlist.js",
-        "magicbox.js",
-        "login.js",
-        "schedule.js"
-      ],
-      "run_at" : "document_end",
-      "all_frames" : true
-    }
-   ],
-   "web_accessible_resources": [
-    "img/iconmonstr-book-17-icon.svg",
-    "img/iconmonstr-calendar-5-icon.svg",
-    "img/iconmonstr-help-3-icon.svg",
-    "img/iconmonstr-home-4-icon.svg",
-    "img/iconmonstr-logout-5-icon.svg",
-    "img/iconmonstr-picture-box-icon.svg",
-    "img/iconmonstr-text-file-4-icon.svg",
-    "img/tufts_cover.jpg",
-    "img/iconmonstr-home-2-icon.svg",
-    "img/iconmonstr-user-icon.svg",
-    "img/iconmonstr-time-icon.svg",
-    "img/iconmonstr-text-file-3-icon.svg",
-    "img/iconmonstr-warning-6-icon.svg",
-    "img/iconmonstr-check-mark.svg"
-   ]
+	"name": "gSIS",
+	"manifest_version": 2,
+	"version": "0.0.5",
+	"description": "Gets information from Google.",
+	"content_scripts": [
+		{
+			"matches": ["https://*.uit.tufts.edu/*"],
+			"css": [
+				"menubar.css",
+				"shoppingcart.css",
+				"ClassSearch.css",
+				"login.css",
+				"classlist.css"
+			],
+			"js": [
+				"jquery.js",
+				"ui/js/jquery-ui-1.10.4.custom.min.js", 
+				"master.js",
+				"menubar.js",
+				"shoppingcart.js",
+				"ClassSearch.js",
+				"classlist.js",
+				"magicbox.js",
+				"login.js",
+				"schedule.js"
+			],
+			"run_at" : "document_end",
+			"all_frames" : true
+		}
+	 ],
+	 "web_accessible_resources": [
+		"img/iconmonstr-book-17-icon.svg",
+		"img/iconmonstr-calendar-5-icon.svg",
+		"img/iconmonstr-help-3-icon.svg",
+		"img/iconmonstr-home-4-icon.svg",
+		"img/iconmonstr-logout-5-icon.svg",
+		"img/iconmonstr-picture-box-icon.svg",
+		"img/iconmonstr-text-file-4-icon.svg",
+		"img/tufts_cover.jpg",
+		"img/iconmonstr-home-2-icon.svg",
+		"img/iconmonstr-user-icon.svg",
+		"img/iconmonstr-time-icon.svg",
+		"img/iconmonstr-text-file-3-icon.svg",
+		"img/iconmonstr-warning-6-icon.svg",
+		"img/iconmonstr-check-mark.svg"
+	 ]
 }

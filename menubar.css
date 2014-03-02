@@ -47,6 +47,10 @@
 	width: 300px;
 }
 
+#magic_box:focus {
+	box-shadow: none;
+}
+
 
 /* Alert Message */
 #IS_ALERTS_AREA {

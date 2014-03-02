@@ -24,7 +24,7 @@ menu.append(logout);
 var help = $('<li class="rightlink"><a class="help-link" href="https://isis.uit.tufts.edu/psp/paprd/EMPLOYEE/EMPL/s/WEBLIB_IS_AW.ISCRIPT1.FieldFormula.IScript_AssemblePage?AWGroupID=TFP_HELP&AWPageID=TFP_HELP&AWObjName=TFP_HELP_LPG">Help</a></li>');
 menu.append(help);
 
-if (true) {
+if (false) {
 	var alerts = $('<li class="alerts-li rightlink dropdown"><a class="alerts-link" href="Javascript:;">Alerts (1)</a></li>');
 	alerts.append('<ul><li class="alert-box"><strong>iSIS Survey Now Available</strong><br />Were you selected to participate in the iSIS User Experience Survey? Check your email for your personalized link. If you did not receive a survey invitation, please contact Lauren.Conoscenti@tufts.edu to participate.</li></ul>')
 	menu.append(alerts);
