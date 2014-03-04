@@ -39,3 +39,33 @@ body.login-page {
 	border-radius: 5px;
 	width: 250px;
 }
+
+#login input:focus {
+	box-shadow: none !important;
+}
+
+#gsis_about {
+	position:absolute;
+	left:10%;
+	top:225px;
+	width:20%;
+	color:white;
+	padding:40px;
+	background: rgba(0,0,0,0.8);
+	height: 400px;
+	overflow-x: hidden;
+	overflow-y:scroll;
+	border-radius:10px;
+}
+
+#gsis_about h3 {
+	font-size:22px;
+}
+
+#gsis_about h3, #gsis_about p {
+	margin: 12px 0;
+}
+
+#gsis_about p.small {
+	font-size:10px;
+}
